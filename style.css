@@ -2,4 +2,19 @@
 /* Тобто це не дизайн однієї сторінки а УСІХ сторінок */
 /* Тут може бути дизайн меню, футера (контактна інформація), і те що є
 на кожній сторінці ОДИНАКОВЕ!!!! */
-
+*{
+    margin:0;
+    padding :0;
+}
+.soundCloud-container{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    background-color: red;
+}
+.main-navigation {
+    display: flex;
+    justify-content:center; 
+    flex-direction: row;
+    gap: 20px;
+}
