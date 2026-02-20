@@ -2,6 +2,13 @@
 /* Тобто це не дизайн однієї сторінки а УСІХ сторінок */
 /* Тут може бути дизайн меню, футера (контактна інформація), і те що є
 на кожній сторінці ОДИНАКОВЕ!!!! */
+
+
+/* MENU */
+/* MENU */
+/* MENU */
+/* MENU */
+/* MENU */
 *{
     margin:0;
     padding :0;
@@ -10,11 +17,47 @@
     display: flex;
     flex-direction: row;
     gap: 8px;
-    background-color: red;
+    background-color: rgba(12, 12, 12, 1);
 }
-.main-navigation {
+/* .main-navigation {
     display: flex;
     justify-content:center; 
     flex-direction: row;
     gap: 20px;
+} */
+
+.main-navigation ul {
+    display: flex;       /* Make li items horizontal */
+    gap: 20px;           /* Space between menu items */
+    list-style: none;    /* Remove bullets */
+    margin: 0;           /* Remove default margin */
+    padding: 0;          /* Remove default padding */
+}
+.btn-container {
+    display: flex;            
+    align-items: center;  
+    justify-content: center;    
+    gap: 40px;               
+    width: 100%;
+}
+
+.logo img {
+    height: 65px;       
+    width: auto;        
+    display: block;     /* remove extra space under image */
+}
+
+li.y   a {
+    color: #f50;
+    text-decoration: none;
+    /* for try artist pro */
+}
+
+.menu-butt{
+    color: rgb(63, 63, 63);
+    text-decoration: none;    /*for every buton*/
+}
+.menu-butt:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;    /*for every buton*/
 }
