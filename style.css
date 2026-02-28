@@ -13,25 +13,27 @@
     margin:0;
     padding :0;
 }
-.soundCloud-container{
+.soundCloud-container {
     display: flex;
-    flex-direction: row;
-    gap: 8px;
-    background-color: rgba(12, 12, 12, 1);
+    align-items: center;
+    justify-content: space-between;
+    background: #0c0c0c;
+    padding: 0 20px;
 }
-/* .main-navigation {
+
+.main-navigation {
     display: flex;
-    justify-content:center; 
-    flex-direction: row;
-    gap: 20px;
-} */
+    align-items: center;
+    gap: 30px;
+    white-space: nowrap;
+}
 
 .main-navigation ul {
-    display: flex;       /* Make li items horizontal */
-    gap: 20px;           /* Space between menu items */
-    list-style: none;    /* Remove bullets */
-    margin: 0;           /* Remove default margin */
-    padding: 0;          /* Remove default padding */
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    white-space: nowrap;
+
 }
 .btn-container {
     display: flex;            
@@ -60,4 +62,28 @@ li.y   a {
 .menu-butt:hover {
     color: rgb(255, 255, 255);
     text-decoration: none;    /*for every buton*/
+}
+.input {
+width: 100%;
+max-width: 220px;
+height: 15px;
+padding: 12px;
+border-radius: 12px;
+border: 1.5px solid lightgrey;
+outline: none;
+transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+box-shadow: 0px 0px 20px -18px;
+}
+
+.input:hover {
+border: 2px solid lightgrey;
+box-shadow: 0px 0px 20px -17px;
+}
+
+.input:active {
+transform: scale(0.95);
+}
+
+.input:focus {
+border: 2px solid grey;
 }
